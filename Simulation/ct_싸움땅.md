@@ -102,7 +102,7 @@ def loser_move(lidx):
             players[lidx] = [nlx,nly,nld,ls,change(nlx,nly,0)] # 총을 줍는다.
             return
 ```
-- 설명
+- 주석 참고
 <br>
 
 
@@ -148,7 +148,7 @@ for _ in range(K):
 print(*score[1:])
 
 ```
-- 설명
+- 주석 참고
 <br>
 
 ### **전체코드**
