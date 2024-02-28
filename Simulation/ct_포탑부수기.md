@@ -35,7 +35,8 @@ last_atk = [[0]*W for _ in range(H)]
 ```
 - 4방향 이동, 9방향 데미지 처리, 각 좌표의 마지막 공격 시점 저장
 <br>
-#### **2\. 공격/수비 타워 찾기**
+
+#### **2공격/수비 타워 찾기**
 ```python
 def find_tower():
 
@@ -59,7 +60,8 @@ def find_tower():
 - 힙에 요소가 한 개만 있을 경우, 문제 조건에 따라 루프 종료.
 - 힙에서 꺼내서 공격/수비 타워의 좌표를 찾는다.
 <br>
-#### **3\. BFS**
+
+#### **3. BFS**
 ```python
 def bfs(now:tuple, end:tuple):
     
@@ -86,6 +88,7 @@ def bfs(now:tuple, end:tuple):
 - 얼마나 걸리는지 전역변수 find에 저장한다. 나중에 DFS 길 찾기 할 때 사용.
 - 벽 넘는 좌표들은 모듈러로 구현
 <br>
+
 #### **4\. DFS**
 ```python
 def dfs(now:tuple, end:tuple, V:list):
@@ -149,6 +152,7 @@ def update():
 ```
 * 어레이를 순회하면서 0보다 작은 타워들은 0으로
 * 그렇지 않는 부분들은, 전투에 참여하지 않았으면 수리
+
 #### 7. 시뮬레이션
 ```python
 for k in range(K):
@@ -186,6 +190,7 @@ print(answer)
 ```
 * 시뮬레이션 진행 후, 맵을 훑여서 가장 큰 값 출력
 <br>
+
 ---
 
 ### **전체코드**
