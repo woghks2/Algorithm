@@ -1,4 +1,3 @@
-[[Simulation]]
 # **[파이썬] 코드트리 : 타워 부수기 (골드1)**
 * [포탑 부수기 | 삼성 SW 역량테스트 기출문제 (codetree.ai)](https://www.codetree.ai/training-field/frequent-problems/problems/destroy-the-turret/submissions?page=1&pageSize=20)
 <br>
@@ -113,6 +112,7 @@ def dfs(now:tuple, end:tuple, V:list):
 - 우 하 좌 상 순서대로 탐색.
 - BFS에서 방문 배열을 토대로 정해진 루트에 맞춰서 간다.
 - 우선순위대로 가서 도착하면 가장 먼저 도달하는 경로 V를 저장한다.
+<br>
 
 #### 5. 공격
 ```python
@@ -137,6 +137,7 @@ def bomb(dmg:int, dfd_loc:tuple):
 ```
 * 모든 지점에 절반의 데미지(몫)
 * 공격 좌표는 절반의 데미지(몫) + a(나머지)를 한 번 더 빼준다.
+<br>
 
 #### 6. 업데이트
 ```python
@@ -152,6 +153,7 @@ def update():
 ```
 * 어레이를 순회하면서 0보다 작은 타워들은 0으로
 * 그렇지 않는 부분들은, 전투에 참여하지 않았으면 수리
+<br>
 
 #### 7. 시뮬레이션
 ```python
@@ -330,6 +332,7 @@ for i in range(H):
         answer = max(answer,arr[i][j])
 print(answer)
 ```
+<br>
 
 #### **코멘트**
 
