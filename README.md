@@ -7,6 +7,7 @@
 * 코드트리 : ct_제목.md
 
 ## 카테고리
+* Brute Force
 * Graph : BFS, DFS, dijkstra, MST, SCC ...
 * Greedy
 * DP
