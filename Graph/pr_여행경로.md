@@ -24,7 +24,10 @@ from collections import defaultdict as dd
 
 def solution(tickets):
     
+    # 전체 티켓 수
     T = len(tickets)
+
+    # 티켓 출발 도착 개수 받아오기
     infos = dd(lambda :dd(int))
     for a,b in tickets:
         infos[a][b] += 1
